@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri & Fakta - Jejak Tari Saman di Era Digital | Tugas Web XII RPL</title>
+  <!-- Pure Tailwind CSS via CDN (Tanpa CSS Tambahan) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-slate-800/90 border-b border-slate-700 sticky top-0 z-50 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-amber-500 flex items-center justify-center font-bold text-slate-950 text-base shadow">
+            S
+          </div>
+          <div>
+            <span class="font-bold text-base text-amber-400 block leading-tight">Saman Digital</span>
+            <span class="text-[11px] text-slate-400 block">Projek Web LENTERA</span>
+          </div>
+        </a>
+
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="index.html" class="text-slate-300 hover:text-amber-400 transition">Beranda</a>
+          <a href="sejarah.html" class="text-slate-300 hover:text-amber-400 transition">Sejarah & Filosofi</a>
+          <a href="digital.html" class="text-slate-300 hover:text-amber-400 transition">Era Digital</a>
+          <a href="galeri.html" class="text-amber-400 font-semibold border-b-2 border-amber-400 pb-1">Galeri & Fakta</a>
+        </div>
+
+        <!-- Tombol Menu Mobile -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="p-2 rounded-lg bg-slate-700 text-slate-300 hover:text-white focus:outline-none" aria-label="Buka Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Menu Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-b border-slate-700 px-4 pt-2 pb-4 space-y-2 text-sm">
+      <a href="index.html" class="block py-2 text-slate-300 hover:text-amber-400">Beranda</a>
+      <a href="sejarah.html" class="block py-2 text-slate-300 hover:text-amber-400">Sejarah & Filosofi</a>
+      <a href="digital.html" class="block py-2 text-slate-300 hover:text-amber-400">Era Digital</a>
+      <a href="galeri.html" class="block py-2 text-amber-400 font-semibold">Galeri & Fakta</a>
+    </div>
+  </nav>
+
+  <!-- KONTEN UTAMA -->
+  <main class="flex-grow max-w-5xl mx-auto px-4 sm:px-6 py-12 space-y-12">
+    
+    <!-- Header Halaman -->
+    <div class="text-center space-y-3 border-b border-slate-800 pb-8">
+      <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
+        Dokumentasi & Trivia
+      </span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white">
+        Galeri Foto & Fakta Unik Tari Saman
+      </h1>
+      <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        Koleksi dokumentasi visual pementasan Tari Saman dan rangkuman fakta menarik yang patut diketahui oleh generasi muda.
+      </p>
+    </div>
+
+    <!-- BAGIAN 1: GALERI FOTO -->
+    <section class="space-y-6">
+      <h2 class="text-xl sm:text-2xl font-bold text-amber-400 flex items-center gap-2">
+        <span class="w-2.5 h-6 bg-amber-500 rounded-sm inline-block"></span>
+        Dokumentasi Pementasan
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Foto 1 -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden flex flex-col shadow-lg">
+          <img src="assets/images/saman_hero.jpg" alt="Penari Saman di Panggung Teater" class="w-full h-52 object-cover">
+          <div class="p-5 flex-grow flex flex-col justify-between space-y-2">
+            <div>
+              <h3 class="font-bold text-white text-base">Pementasan Panggung</h3>
+              <p class="text-slate-300 text-xs sm:text-sm mt-1 leading-relaxed">
+                Penari mengenakan pakaian hitam berhiaskan benang emas Kerawang Gayo, duduk bersimpuh dalam barisan lurus yang sangat rapat.
+              </p>
+            </div>
+            <span class="text-[11px] text-amber-400 font-mono">Panggung Teatrikal</span>
+          </div>
+        </div>
+
+        <!-- Foto 2 -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden flex flex-col shadow-lg">
+          <img src="assets/images/saman_kolosal.jpg" alt="10.001 Penari Saman di Gayo Lues" class="w-full h-52 object-cover">
+          <div class="p-5 flex-grow flex flex-col justify-between space-y-2">
+            <div>
+              <h3 class="font-bold text-white text-base">Rekor 10.001 Penari</h3>
+              <p class="text-slate-300 text-xs sm:text-sm mt-1 leading-relaxed">
+                Pemandangan spektakuler ribuan warga adat di Stadion Seribu Bukit, Kabupaten Gayo Lues, yang memecahkan rekor dunia MURI.
+              </p>
+            </div>
+            <span class="text-[11px] text-emerald-400 font-mono">Rekor Dunia MURI</span>
+          </div>
+        </div>
+
+        <!-- Foto 3 -->
+        <div class="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden flex flex-col shadow-lg">
+          <img src="assets/images/saman_digital.jpg" alt="Konsep Preservasi Digital dan AI" class="w-full h-52 object-cover">
+          <div class="p-5 flex-grow flex flex-col justify-between space-y-2">
+            <div>
+              <h3 class="font-bold text-white text-base">Preservasi Digital (3D)</h3>
+              <p class="text-slate-300 text-xs sm:text-sm mt-1 leading-relaxed">
+                Ilustrasi konsep teknologi sensor gerak 3D untuk merekam koordinat sendi penari agar tarian dapat dipelajari generasi masa depan.
+              </p>
+            </div>
+            <span class="text-[11px] text-blue-400 font-mono">Era Digital & AI</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BAGIAN 2: 5 FAKTA UNIK -->
+    <section class="space-y-6">
+      <h2 class="text-xl sm:text-2xl font-bold text-amber-400 flex items-center gap-2">
+        <span class="w-2.5 h-6 bg-amber-500 rounded-sm inline-block"></span>
+        5 Fakta Unik yang Jarang Diketahui
+      </h2>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        
+        <div class="bg-slate-800 border border-slate-700 p-5 rounded-xl space-y-2">
+          <div class="flex items-center gap-2 text-amber-400 font-bold text-sm">
+            <span>Fakta 1</span>
+          </div>
+          <h3 class="font-bold text-white text-base">Menggunakan Bahasa Gayo Asli</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Syair-syair Tari Saman dilantunkan dalam Bahasa Gayo, bukan Bahasa Aceh pesisir. Bahasa Gayo memiliki rumpun tersendiri yang dituturkan di dataran tinggi Aceh tengah dan tenggara.
+          </p>
+        </div>
+
+        <div class="bg-slate-800 border border-slate-700 p-5 rounded-xl space-y-2">
+          <div class="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+            <span>Fakta 2</span>
+          </div>
+          <h3 class="font-bold text-white text-base">Makna 5 Warna Busana Adat</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Bordir Kerawang Gayo memakai 5 warna filosofis: <strong>Hitam</strong> (keteguhan iman), <strong>Merah</strong> (keberanian), <strong>Kuning</strong> (kebijaksanaan adat), <strong>Hijau</strong> (kesuburan alam), dan <strong>Putih</strong> (kesucian hati).
+          </p>
+        </div>
+
+        <div class="bg-slate-800 border border-slate-700 p-5 rounded-xl space-y-2">
+          <div class="flex items-center gap-2 text-blue-400 font-bold text-sm">
+            <span>Fakta 3</span>
+          </div>
+          <h3 class="font-bold text-white text-base">Jumlah Penari Selalu Ganjil</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Jumlah penari dalam satu saf tari Saman biasanya selalu ganjil (9, 11, 13, dst). Hal ini bertujuan agar posisi pemimpin (Syekh) selalu berada tepat di tengah-tengah sebagai poros simetri.
+          </p>
+        </div>
+
+        <div class="bg-slate-800 border border-slate-700 p-5 rounded-xl space-y-2">
+          <div class="flex items-center gap-2 text-purple-400 font-bold text-sm">
+            <span>Fakta 4</span>
+          </div>
+          <h3 class="font-bold text-white text-base">Akselerasi Tempo Bertahap</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Tari Saman dimulai dengan alunan zikir yang sangat lambat dan tenang (<em>rengum</em>), kemudian berangsur-angsur bertambah cepat, hingga mencapai klimaks kecepatan kilat (<em>kirep</em>).
+          </p>
+        </div>
+
+        <div class="bg-slate-800 border border-slate-700 p-5 rounded-xl space-y-2 sm:col-span-2">
+          <div class="flex items-center gap-2 text-yellow-400 font-bold text-sm">
+            <span>Fakta 5</span>
+          </div>
+          <h3 class="font-bold text-white text-base">Perbedaan dengan Ratoh Duek</h3>
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+            Tari Saman asli berasal dari suku Gayo, ditarikan oleh laki-laki tanpa iringan alat musik. Sedangkan tarian duduk yang ditarikan oleh perempuan dengan iringan rebana/rapa'i dan sering dilombakan di sekolah sebenarnya adalah tarian <strong>Ratoh Duek</strong> atau <strong>Ratoh Jaroe</strong> dari suku Aceh pesisir.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NAVIGASI KEMBALI -->
+    <div class="pt-4 border-t border-slate-800 flex justify-between items-center text-sm">
+      <a href="digital.html" class="text-slate-400 hover:text-white transition">&larr; Kembali ke Era Digital</a>
+      <a href="index.html" class="text-amber-400 hover:underline font-semibold">
+        Kembali ke Beranda Utama
+      </a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-8 text-center text-xs text-slate-400 mt-12">
+    <div class="max-w-6xl mx-auto px-4 space-y-3">
+      <p class="text-slate-300 font-semibold">Tugas Projek LENTERA Web • Tema: Jejak Budaya di Era Digital (Tari Saman)</p>
+      <div class="flex justify-center gap-6 text-slate-400">
+        <a href="index.html" class="hover:text-amber-400">Beranda</a>
+        <a href="sejarah.html" class="hover:text-amber-400">Sejarah</a>
+        <a href="digital.html" class="hover:text-amber-400">Era Digital</a>
+        <a href="galeri.html" class="hover:text-amber-400">Galeri</a>
+      </div>
+      <p class="text-slate-500 text-[11px] pt-2">I Gusti Ngurah</p>
+    </div>
+  </footer>
+
+  <!-- JS Sederhana -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

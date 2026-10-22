@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - Jejak Tari Saman di Era Digital | Tugas Web XII RPL</title>
+  <!-- Pure Tailwind CSS via CDN (Tanpa CSS Tambahan) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="bg-slate-800/90 border-b border-slate-700 sticky top-0 z-50 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Logo Sekolah / Judul Projek -->
+        <a href="index.html" class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-lg bg-amber-500 flex items-center justify-center font-bold text-slate-950 text-base shadow">
+            S
+          </div>
+          <div>
+            <span class="font-bold text-base text-amber-400 block leading-tight">Saman Digital</span>
+            <span class="text-[11px] text-slate-400 block">Projek Web LENTERA</span>
+          </div>
+        </a>
+
+        <!-- Menu Desktop -->
+        <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="index.html" class="text-amber-400 font-semibold border-b-2 border-amber-400 pb-1">Beranda</a>
+          <a href="sejarah.html" class="text-slate-300 hover:text-amber-400 transition">Sejarah & Filosofi</a>
+          <a href="digital.html" class="text-slate-300 hover:text-amber-400 transition">Era Digital</a>
+          <a href="galeri.html" class="text-slate-300 hover:text-amber-400 transition">Galeri & Fakta</a>
+        </div>
+
+        <!-- Tombol Menu Mobile -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="p-2 rounded-lg bg-slate-700 text-slate-300 hover:text-white focus:outline-none" aria-label="Buka Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Menu Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-b border-slate-700 px-4 pt-2 pb-4 space-y-2 text-sm">
+      <a href="index.html" class="block py-2 text-amber-400 font-semibold">Beranda</a>
+      <a href="sejarah.html" class="block py-2 text-slate-300 hover:text-amber-400">Sejarah & Filosofi</a>
+      <a href="digital.html" class="block py-2 text-slate-300 hover:text-amber-400">Era Digital</a>
+      <a href="galeri.html" class="block py-2 text-slate-300 hover:text-amber-400">Galeri & Fakta</a>
+    </div>
+  </nav>
+
+  <!-- KONTEN UTAMA -->
+  <main class="flex-grow">
+    
+    <!-- HERO SECTION -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        
+        <!-- Teks Pengenalan -->
+        <div class="space-y-5">
+          <div class="inline-block px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold">
+            Tugas Akhir Pemrograman Web • SMK
+          </div>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">
+            Jejak Budaya <span class="text-amber-400">Tari Saman</span> di Era Digital
+          </h1>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Website ini dibuat untuk merangkum informasi sederhana tentang Tari Saman asal Gayo Lues, Aceh. Mulai dari asal-usulnya, keunikan gerak tepukan tanpa musik, hingga bagaimana tari ini tetap eksis dan viral di era internet sekarang.
+          </p>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a href="digital.html" class="px-5 py-2.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold text-sm transition shadow-lg">
+              Pelajari Jejak Digital &rarr;
+            </a>
+            <a href="sejarah.html" class="px-5 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold text-sm transition">
+              Baca Sejarah Lengkap
+            </a>
+          </div>
+        </div>
+
+        <!-- Gambar Hero -->
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
+            <img src="assets/images/saman_hero.jpg" alt="Pementasan Tari Saman Tradisional" class="w-full h-72 sm:h-80 md:h-96 object-cover">
+          </div>
+          <p class="text-xs text-slate-400 text-center mt-2 italic">
+            Dokumentasi penari Saman berbusana adat Kerawang Gayo di atas panggung.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3 POIN UTAMA -->
+    <section class="bg-slate-800/50 border-t border-b border-slate-800 py-12">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <h2 class="text-2xl sm:text-3xl font-bold text-white">3 Fakta Penting Tari Saman</h2>
+          <p class="text-slate-400 text-sm mt-2">Ringkasan cepat mengapa tarian ini begitu istimewa dan mendunia.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Poin 1 -->
+          <div class="bg-slate-800 border border-slate-700 p-6 rounded-xl space-y-3 hover:border-amber-500/50 transition">
+            <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-lg">
+              1
+            </div>
+            <h3 class="text-lg font-bold text-white">Lahir di Tanah Gayo</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Dikembangkan pada abad ke-14 oleh ulama besar <strong>Syekh Saman</strong> di Dataran Tinggi Gayo Lues, Aceh, awalnya sebagai sarana dakwah agama Islam.
+            </p>
+          </div>
+
+          <!-- Poin 2 -->
+          <div class="bg-slate-800 border border-slate-700 p-6 rounded-xl space-y-3 hover:border-amber-500/50 transition">
+            <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-lg">
+              2
+            </div>
+            <h3 class="text-lg font-bold text-white">0 Alat Musik</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Tari Saman asli tidak menggunakan gendang ataupun alat musik lain. Musiknya murni berasal dari tepuk dada, tepuk tangan, petik jari, dan syair vokal para penari.
+            </p>
+          </div>
+
+          <!-- Poin 3 -->
+          <div class="bg-slate-800 border border-slate-700 p-6 rounded-xl space-y-3 hover:border-amber-500/50 transition">
+            <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-lg">
+              3
+            </div>
+            <h3 class="text-lg font-bold text-white">Warisan Dunia UNESCO</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Pada 24 November 2011, UNESCO resmi menetapkan Tari Saman sebagai Warisan Budaya Takbenda Dunia yang perlu perlindungan mendesak.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION RINGKASAN ERA DIGITAL -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-14">
+      <div class="bg-gradient-to-r from-slate-800 to-slate-800/80 border border-slate-700 rounded-2xl p-6 sm:p-10">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          
+          <div class="md:col-span-7 space-y-4">
+            <span class="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold">
+              Sorotan Utama
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-white">
+              Bagaimana Tari Saman Bertahan di Era Digital?
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Banyak orang mengira budaya tradisional akan ditinggalkan oleh anak muda. Namun berkat media sosial (TikTok, Instagram, YouTube), video Tari Saman justru ditonton jutaan orang dari berbagai belahan dunia! Bahkan ada teknologi Motion Capture untuk merekam gerakan penari agar tidak punah.
+            </p>
+            <div class="pt-2">
+              <a href="digital.html" class="inline-flex items-center gap-2 text-sm font-bold text-amber-400 hover:text-amber-300 transition">
+                <span>Baca pembahasan selengkapnya di halaman Era Digital</span> &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="md:col-span-5">
+            <div class="rounded-xl overflow-hidden border border-slate-700 shadow-md">
+              <img src="assets/images/saman_digital.jpg" alt="Konsep Preservasi Digital Tari Saman" class="w-full h-56 object-cover">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-8 text-center text-xs text-slate-400">
+    <div class="max-w-6xl mx-auto px-4 space-y-3">
+      <p class="text-slate-300 font-semibold">Tugas Projek LENTERA Web • Tema: Jejak Budaya di Era Digital (Tari Saman)</p>
+      <div class="flex justify-center gap-6 text-slate-400">
+        <a href="index.html" class="hover:text-amber-400">Beranda</a>
+        <a href="sejarah.html" class="hover:text-amber-400">Sejarah</a>
+        <a href="digital.html" class="hover:text-amber-400">Era Digital</a>
+        <a href="galeri.html" class="hover:text-amber-400">Galeri</a>
+      </div>
+      <p class="text-slate-500 text-[11px] pt-2">I Gusti Ngurah</p>
+    </div>
+  </footer>
+
+  <!-- JS Sederhana -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
